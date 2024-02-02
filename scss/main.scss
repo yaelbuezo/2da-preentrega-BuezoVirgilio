@@ -1,0 +1,14 @@
+@import 'utilities/reset';
+@import 'utilities/globals';
+
+@import 'components/header';
+
+@import 'pages/index';
+@import 'pages/shop';
+@import 'pages/collections';
+@import 'pages/about';
+@import 'pages/contact';
+
+@import 'components/footer';
+
+@import 'utilities/media-queries';

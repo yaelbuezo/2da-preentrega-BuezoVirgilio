@@ -1,0 +1,21 @@
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  background-color: #cbb7b1;
+  color: #fefcfb;
+  font-size: 13px; 
+  .social {
+    a {
+      color: #e5dbd8;
+      margin-right: 20px;
+      &:hover {
+        color: #986e62;
+      }
+    }
+  }
+}

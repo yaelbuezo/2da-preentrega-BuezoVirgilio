@@ -1,0 +1,21 @@
+/* collections page */
+#collection {
+  display: grid;
+  height: 90vh;
+  grid-template-columns: repeat(4, auto);
+  .col-item {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .col-name {
+      position: absolute;
+      font-size: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fefcfb;
+    }
+  }
+}

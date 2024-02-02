@@ -1,0 +1,31 @@
+/* navbar */
+header {
+  #navbar {
+    font-weight: bold;
+    display: flex;
+    height: 80px;
+    background-color: #cbb7b1;
+    position: relative;
+    z-index: 2;
+    .logo { 
+      width: 8rem; 
+      padding: 15px;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        a {
+          font-size: 1.2rem;
+          color: #7e4a3b;
+          padding: 20px;
+          &:hover { color: #fefcfb;}
+          &.current {
+            color: #fefcfb;
+            background-color:  #bfa8a2;
+          }
+        }
+      }
+    }
+  }
+}

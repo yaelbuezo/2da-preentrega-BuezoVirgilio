@@ -1,0 +1,35 @@
+/* fonts */
+@font-face {
+  font-family: 'Libre Baskerville Regular', 'Libre Baskerville Bold';
+  src: url(../assets/fonts/Libre_Baskerville);
+}
+
+/* estilos globales */
+body { background-color: #e5dbd8 !important;}
+
+// a {
+//   color: #7e4a3b;
+//   text-decoration: none;
+// }
+
+p { margin: 10px 0; }
+
+.btn-choc {
+  display: inline-block;
+  font-size: 18px;
+  background-color: #986e62;
+  color: #fefcfb;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #e5dbd8;
+    color: #7e4a3b;
+  }
+}
+
+.nav-bg {
+  background-color: #cbb7b1;
+}

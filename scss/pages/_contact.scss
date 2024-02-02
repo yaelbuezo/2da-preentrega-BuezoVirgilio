@@ -1,0 +1,27 @@
+/* contact page */
+#contact-form {
+  .container {
+    padding: 90px;
+    h1 { 
+      color: #7e4a3b;
+      font-weight: bold;
+    }
+    p { color: #693b2f;}
+    .form-group {
+      margin-bottom: 20px;
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #693b2f;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px #7e4a3b solid;
+      }
+      textarea {
+        height: 200px;
+      }
+    }
+  }
+}

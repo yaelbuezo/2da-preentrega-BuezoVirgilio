@@ -5,56 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2d5a8e0003.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Yaelle Designs | Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-  <header class="header">
+  <header>
     <div id="navbar">
-      <a href="index.html">
-        <img class="logo" src="./images/logo_nb_dark.png" alt="Logo de Yaelle Designs">
-      </a>
-      <nav>
-        <ul>
-          <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="pages/shop.html">Shop</a></li>
-          <li><a href="pages/collections.html">Collections</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bg">
+        <div class="container-fluid nav-bg">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo" src="./assets/images/logo.png" alt="logo de yaelle designs">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link current" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/collections.html">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
+  </header>
+  <main>
     <div class="showcase">
         <div class="showcase-content">
           <a class="btn-choc" href="pages/collections.html">See Our Collections</a>
         </div>
     </div>
-  </header>
-  <main>
-    <section>
-      
-    </section>
     <section class="home-shop">
       <h1>Shop</h1>
       <div class="contenedor py-2">
         <div class="shop-sec">
           <a href="pages/shop.html">
-            <img src="./images/designs/top9.jpg" alt="">
+            <img src="./assets/images/home/shop1.jpg" alt="">
           </a>
-          <div class="shop-name">Corsets</div>
+          <div class="shop-name"><p>Corsets</p></div>
         </div>
         <div class="shop-sec">
           <a href="pages/shop.html">
-            <img src="./images/designs/dress3.jpeg" alt="">
+            <img src="./assets/images/home/shop2.jpeg" alt="">
           </a>
-          <div class="shop-name">Dresses</div>
+          <div class="shop-name"><p>Dresses</p></div>
         </div>
         <div class="shop-sec">
           <a href="pages/shop.html">
-            <img src="./images/designs/top7.jpeg" alt="">
+            <img src="./assets/images/home/shop3.jpeg" alt="">
           </a>
-          <div class="shop-name">Tops</div>
+          <div class="shop-name"><p>Tops</p></div>
         </div>
       </div>
     </section>
