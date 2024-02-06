@@ -7,29 +7,45 @@
 /* estilos globales */
 body { background-color: #e5dbd8 !important;}
 
-// a {
-//   color: #7e4a3b;
-//   text-decoration: none;
-// }
-
 p { margin: 10px 0; }
+
+/* variables */
+$color-darkest: #693b2f;
+$color-dark: #7e4a3b;
+$color-choc: #986e62;
+$color-regular: #ad938d;
+$color-beige: #cbb7b1;
+$color-light: #e5dbd8;
 
 .btn-choc {
   display: inline-block;
-  font-size: 18px;
-  background-color: #986e62;
-  color: #fefcfb;
+  font-size: 1.1rem;
+  background-color: $color-choc;
+  color: $color-light;
   padding: 13px 20px;
   border: none;
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
   &:hover {
-    background-color: #e5dbd8;
-    color: #7e4a3b;
+    background-color: $color-light;
+    color: $color-dark;
   }
 }
 
 .nav-bg {
-  background-color: #cbb7b1;
+  background-color: $color-beige;
+}
+
+/* extend */
+.title {
+  font-weight: bold;
+  text-align: center;
+  color: $color-dark;
+}
+
+/* mixin */
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
 }

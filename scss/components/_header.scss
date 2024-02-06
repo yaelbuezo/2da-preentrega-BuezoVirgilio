@@ -4,7 +4,7 @@ header {
     font-weight: bold;
     display: flex;
     height: 80px;
-    background-color: #cbb7b1;
+    background-color: $color-beige;
     position: relative;
     z-index: 2;
     .logo { 
@@ -17,11 +17,11 @@ header {
       li {
         a {
           font-size: 1.2rem;
-          color: #7e4a3b;
+          color: $color-dark;
           padding: 20px;
-          &:hover { color: #fefcfb;}
+          &:hover { color: $color-light;}
           &.current {
-            color: #fefcfb;
+            color: $color-light;
             background-color:  #bfa8a2;
           }
         }

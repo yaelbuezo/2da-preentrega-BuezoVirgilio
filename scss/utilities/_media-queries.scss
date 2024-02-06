@@ -1,6 +1,6 @@
 /* media queries */
 /* mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   #navbar {
     flex-direction: column;
     ul {
@@ -38,7 +38,7 @@
     .contenedor {
       display: block;
       padding: 0;
-      .shop-item {
+      .shop-item { 
         margin-bottom: 15px;
       }
     }

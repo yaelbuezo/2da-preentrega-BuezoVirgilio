@@ -3,21 +3,21 @@
   .container {
     padding: 90px;
     h1 { 
-      color: #7e4a3b;
-      font-weight: bold;
+      @extend .title;
+      text-align: left;
     }
-    p { color: #693b2f;}
+    p { color: $color-darkest;}
     .form-group {
       margin-bottom: 20px;
       label {
         display: block;
         margin-bottom: 5px;
-        color: #693b2f;
+        color: $color-darkest;
       }
       input, textarea {
         width: 100%;
         padding: 10px;
-        border: 1px #7e4a3b solid;
+        border: 1px $color-dark solid;
       }
       textarea {
         height: 200px;

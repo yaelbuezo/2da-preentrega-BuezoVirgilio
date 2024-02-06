@@ -1,11 +1,9 @@
 /* shop page */
 #shop-page {
   h1 {
-    font-weight: bold;
+    @extend .title;
     margin: 40px 0 0 0;
-    text-align: center;
-    font-size: 40px;
-    color: #7e4a3b;
+    font-size: 2.5rem;
   }
   .contenedor {
     margin: 30px;
@@ -17,16 +15,15 @@
     column-gap: 15px;
     justify-content: center;
     .shop-item {
-      border: 1px solid #986e62;
+      border: 1px solid $color-choc;
       border-radius: 5px;
       img {
         padding: 5px;
-        width: 100%;
-        height: 100%;
+        @include sizes(100%, 100%);
         position: relative;
       }
       .info-item {
-        color: #693b2f;
+        color: $color-darkest;
         padding: 10px;
         line-height: 12px;
       }

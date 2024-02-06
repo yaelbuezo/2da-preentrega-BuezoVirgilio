@@ -20,11 +20,12 @@ p {
   margin: 10px 0;
 }
 
+/* variables */
 .btn-choc {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.1rem;
   background-color: #986e62;
-  color: #fefcfb;
+  color: #e5dbd8;
   padding: 13px 20px;
   border: none;
   border-radius: 10px;
@@ -40,6 +41,14 @@ p {
   background-color: #cbb7b1;
 }
 
+/* extend */
+.title, #contact-form .container h1, #shop-page h1, .home-shop h1 {
+  font-weight: bold;
+  text-align: center;
+  color: #7e4a3b;
+}
+
+/* mixin */
 /* navbar */
 header #navbar {
   font-weight: bold;
@@ -63,10 +72,10 @@ header #navbar ul li a {
   padding: 20px;
 }
 header #navbar ul li a:hover {
-  color: #fefcfb;
+  color: #e5dbd8;
 }
 header #navbar ul li a.current {
-  color: #fefcfb;
+  color: #e5dbd8;
   background-color: #bfa8a2;
 }
 
@@ -101,13 +110,10 @@ header #navbar ul li a.current {
 
 /* shop section */
 .home-shop h1 {
-  font-weight: bold;
   margin: 60px 30px 15px 30px;
-  text-align: center;
-  font-size: 34px;
-  color: #7e4a3b;
+  font-size: 2.1rem;
 }
-.home-shop .contenedor {
+.home-shop .contenedor, .home-shop #about .about-img, #about .home-shop .about-img {
   display: grid;
   height: 90vh;
   margin: 20px;
@@ -130,18 +136,15 @@ header #navbar ul li a.current {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fefcfb;
+  color: #e5dbd8;
 }
 
 /* shop page */
 #shop-page h1 {
-  font-weight: bold;
   margin: 40px 0 0 0;
-  text-align: center;
-  font-size: 40px;
-  color: #7e4a3b;
+  font-size: 2.5rem;
 }
-#shop-page .contenedor {
+#shop-page .contenedor, #shop-page #about .about-img, #about #shop-page .about-img {
   margin: 30px;
   padding: 20px;
   display: grid;
@@ -151,17 +154,17 @@ header #navbar ul li a.current {
   column-gap: 15px;
   justify-content: center;
 }
-#shop-page .contenedor .shop-item {
+#shop-page .contenedor .shop-item, #shop-page #about .about-img .shop-item, #about #shop-page .about-img .shop-item {
   border: 1px solid #986e62;
   border-radius: 5px;
 }
-#shop-page .contenedor .shop-item img {
+#shop-page .contenedor .shop-item img, #shop-page #about .about-img .shop-item img, #about #shop-page .about-img .shop-item img {
   padding: 5px;
   width: 100%;
   height: 100%;
   position: relative;
 }
-#shop-page .contenedor .shop-item .info-item {
+#shop-page .contenedor .shop-item .info-item, #shop-page #about .about-img .shop-item .info-item, #about #shop-page .about-img .shop-item .info-item {
   color: #693b2f;
   padding: 10px;
   line-height: 12px;
@@ -182,11 +185,11 @@ header #navbar ul li a.current {
 }
 #collection .col-item .col-name {
   position: absolute;
-  font-size: 20px;
+  font-size: 1.25rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fefcfb;
+  color: #e5dbd8;
 }
 
 /* about page */
@@ -219,8 +222,7 @@ header #navbar ul li a.current {
   padding: 90px;
 }
 #contact-form .container h1 {
-  color: #7e4a3b;
-  font-weight: bold;
+  text-align: left;
 }
 #contact-form .container p {
   color: #693b2f;
@@ -251,7 +253,7 @@ header #navbar ul li a.current {
   text-align: center;
   height: 150px;
   background-color: #cbb7b1;
-  color: #fefcfb;
+  color: #e5dbd8;
   font-size: 13px;
 }
 #footer .social a {
@@ -264,7 +266,7 @@ header #navbar ul li a.current {
 
 /* media queries */
 /* mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   #navbar {
     flex-direction: column;
   }
@@ -283,17 +285,17 @@ header #navbar ul li a.current {
   .home-shop h1 {
     font-size: 1.8rem;
   }
-  .home-shop .contenedor {
+  .home-shop .contenedor, .home-shop #about .about-img, #about .home-shop .about-img {
     margin: 5px;
   }
   #shop-page h1 {
     font-size: 1.8rem;
   }
-  #shop-page .contenedor {
+  #shop-page .contenedor, #shop-page #about .about-img, #about #shop-page .about-img {
     display: block;
     padding: 0;
   }
-  #shop-page .contenedor .shop-item {
+  #shop-page .contenedor .shop-item, #shop-page #about .about-img .shop-item, #about #shop-page .about-img .shop-item {
     margin-bottom: 15px;
   }
   #about .about-info {
@@ -316,15 +318,15 @@ header #navbar ul li a.current {
   #navbar a {
     margin: 0;
   }
-  .home-shop .contenedor {
+  .home-shop .contenedor, .home-shop #about .about-img, #about .home-shop .about-img {
     grid-template-columns: 1fr;
     height: 25%;
   }
-  .home-shop .contenedor .shop-sec {
+  .home-shop .contenedor .shop-sec, .home-shop #about .about-img .shop-sec, #about .home-shop .about-img .shop-sec {
     padding: 10px;
     margin: 10px;
   }
-  .home-shop .contenedor .shop-sec .shop-name {
+  .home-shop .contenedor .shop-sec .shop-name, .home-shop #about .about-img .shop-sec .shop-name, #about .home-shop .about-img .shop-sec .shop-name {
     font-size: 1rem;
   }
   #collection {
@@ -334,7 +336,7 @@ header #navbar ul li a.current {
   #collection .col-name p {
     font-size: 1rem;
   }
-  #shop-page .contenedor {
+  #shop-page .contenedor, #shop-page #about .about-img, #about #shop-page .about-img {
     grid-template-columns: repeat(2, 1fr);
   }
   #about .about-info {
