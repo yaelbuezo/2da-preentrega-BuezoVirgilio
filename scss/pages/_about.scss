@@ -1,25 +1,25 @@
 /* about page */
 #about {
-    .about-info {
-      padding: 100px 150px 90px 150px;
-      display: block;
-      text-align: justify;
-      .about-heading {
-        padding-bottom: 10px;
-        font-size: 2.2rem;
-        font-weight: bold;
-        color: $color-regular;
-      }
-      p {
-        color: $color-darkest;
-        font-size: 1.3rem;
-      }
+  .about-info {
+    padding: 100px 150px 90px 150px;
+    display: block;
+    text-align: justify;
+    .about-heading {
+      padding-bottom: 10px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: $color-regular;
     }
-    .about-img {
-      @extend .contenedor;
-      margin: 30px;
-      display: flex;
-      justify-content: space-around;
-      img { width: 60vh;}
+    p {
+      color: $color-darkest;
+      font-size: 1.3rem;
     }
+  }
+  .about-img {
+    @extend .contenedor;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    img { width: 60vh;}
+  }
 }

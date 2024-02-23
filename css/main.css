@@ -38,6 +38,7 @@ p {
 }
 
 .nav-bg {
+  width: 100%;
   background-color: #cbb7b1;
 }
 
@@ -130,6 +131,11 @@ header #navbar ul li a.current {
   width: 100%;
   height: 100%;
 }
+.home-shop .shop-sec img:hover {
+  -webkit-box-shadow: -2px 11px 50px 7px #787373;
+  -moz-box-shadow: -2px 11px 50px 7px #787373;
+  box-shadow: -2px 11px 50px 7px #787373;
+}
 .home-shop .shop-sec .shop-name {
   position: absolute;
   font-size: 1.3rem;
@@ -190,6 +196,9 @@ header #navbar ul li a.current {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e5dbd8;
+}
+#collection .col-item .col-name:hover {
+  font-size: 1.5rem;
 }
 
 /* about page */
@@ -266,7 +275,7 @@ header #navbar ul li a.current {
 
 /* media queries */
 /* mobile */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   #navbar {
     flex-direction: column;
   }

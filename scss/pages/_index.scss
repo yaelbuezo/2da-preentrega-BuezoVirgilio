@@ -45,6 +45,11 @@
     align-items: center;
     img {
       @include sizes(100%, 100%);
+      &:hover {
+        -webkit-box-shadow:-2px 11px 50px 7px #787373 ;
+        -moz-box-shadow:-2px 11px 50px 7px #787373 ;
+        box-shadow:-2px 11px 50px 7px #787373 ;
+      }
     }
     .shop-name {
       position: absolute;
